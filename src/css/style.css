@@ -1,0 +1,9 @@
+#header-background{
+    background-color: #0d1117; 
+    background-image: 
+        radial-gradient(at 0% 0%, #0d1e2e 0%, transparent 50%),
+        radial-gradient(at 100% 100%, #150f28 0%, transparent 50%),
+        linear-gradient(to top, rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to left, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+}
