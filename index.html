@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="src/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="src/images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
-<body class="bg-[#0d1117]">  
+
+<body class="bg-[#0d1117]">                              
     <div class="min-h-screen text-white bg-fixed"id="header-background">
 
     <header class="text-white">
@@ -23,14 +25,14 @@
             <div class="flex lg:hidden">
                 <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
                 <span class="sr-only">Open main menu</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
                     <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 </button>
             </div>
 
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#about" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">About</a>
+                <a href="#about" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">About Me</a>
                 <a href="#projects" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Projects</a>
                 <a href="#services" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Services</a>
                 <a href="#contact" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Contact</a>
@@ -48,7 +50,7 @@
                     </a>
                     <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
                         <span class="sr-only">Close menu</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
                         <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
@@ -89,12 +91,50 @@
         </header>
     </div>
 
-    <section id="about" class="bg-[#151a21] text-white p-16 md:p-24 border-t border-gray-700">
-        <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">About Me</h3>
-        <p class="text-lg text-gray-300 leading-relaxed max-w-4xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+    <section id="about" class="bg-[#151a21] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
+        <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">
+            About Me
+        </h3>
+
+        <div class="w-11/12 md:w-2/3">
+            <p class="text-lg text-gray-300 leading-relaxed text-center">
+                Hello! I'm Paulo Welton, a Full-Stack and Automation Developer from Brazil.
+                I’ve been studying software development since 2021 and working professionally since 2023.
+                I'm currently pursuing a degree in Computer Science while building scalable back-end systems
+                and automating real business workflows with Python.
+            </p>
+        </div>
+
+        <h4 class="text-2xl font-bold mt-12 mb-6 text-cyan-300 uppercase tracking-wider">
+            Skills
+        </h4>
+
+        <div class="flex flex-wrap justify-center gap-4 text-center">
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">Python</span>
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">Automation (RPA)</span>
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">FastAPI</span>
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">Flask</span>
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">SQLite3 / SQL</span>
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">Pandas</span>
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">JavaScript</span>
+            <span class="px-5 py-2 border-2 border-cyan-400 rounded-lg text-cyan-300 font-semibold">Tailwind CSS</span>
+        </div>
+
+        <h4 class="text-2xl font-bold mt-16 mb-6 text-cyan-300 uppercase tracking-wider">
+            Tech Stack
+        </h4>
+
+        <div class="text-6xl flex flex-wrap justify-center gap-10 text-cyan-300">
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-fastapi-plain colored"></i>
+            <i class="devicon-flask-original colored"></i>
+            <i class="devicon-sqlite-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+        </div>
     </section>
+
 
     <section id="projects" class="bg-[#10141a] text-white p-16 md:p-24 border-t border-gray-700">
         <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">Projects</h3>
