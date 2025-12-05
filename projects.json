@@ -1,0 +1,17 @@
+[
+  {
+    "title": "RPA - Invoice Automation",
+    "description": "Bot that reads spreadsheets, extracts data and updates a dashboard automatically.",
+    "tags": ["Python", "Pandas", "RPA"],
+    "image": "src/projects/invoice.png",
+    "link": "https://github.com/paulowelton/invoice-bot"
+  },
+  
+  {
+    "title": "API - User Management",
+    "description": "REST API built with FastAPI for authentication and user operations.",
+    "tags": ["FastAPI", "SQLAlchemy", "Docker"],
+    "image": "src/projects/api.png",
+    "link": "https://github.com/paulowelton/user-api"
+  }
+]
