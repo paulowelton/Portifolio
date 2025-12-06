@@ -3,7 +3,7 @@
     "title": "Sistema de Controle de Finanças",
     "description": "A system that organizes your income and expenses throughout the month and creates personalized reports to show data about your financial life.",
     "tags": ["Javascript", "Node.js", "Bootstrap"],
-    "image": "src/images/projeto1.png",
+    "images": ["src/images/projeto1.png", "src/images/download.png"],
     "link": "https://github.com/paulowelton/Sistema-de-Controle-de-Financas"
   }
 ]
