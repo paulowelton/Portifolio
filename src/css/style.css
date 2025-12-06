@@ -10,11 +10,6 @@ html{
         linear-gradient(to left, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
 }
-#foto{
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-}
 .swiper {
   width: 600px;
   height: 300px;
