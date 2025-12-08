@@ -15,234 +15,222 @@
 </head>
 <body class="bg-[#0d1117]"> 
     
-    <div 
-        class="min-h-screen text-white bg-fixed" 
-        id="header-background"
-        style="
-            background-color: #0d1117; 
-            background-image: 
-                radial-gradient(at 0% 0%, #0d1e2e 0%, transparent 50%),
-                radial-gradient(at 100% 100%, #150f28 0%, transparent 50%),
-                linear-gradient(to top, rgba(0, 255, 255, 0.05) 1px, transparent 1px),
-                linear-gradient(to left, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
-        "
-    >
+<div class="min-h-screen text-white bg-fixed" id="header-background">
 
-    <header class="text-white">
-        <nav class="flex items-center justify-between p-6 lg:px-12">
-            <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Paulo Welton</span>
-                <img src="src/images/logo.png" alt="Logo" class="h-16 w-auto" />
-                </a>
-            </div>
-            
-            <div class="flex lg:hidden">
-                <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
-                <span class="sr-only">Open main menu</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
-                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                </button>
-            </div>
-
-            <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#about" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">About Me</a>
-                <a href="#projects" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Projects</a>
-                <a href="#services" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Services</a>
-                <a href="#contact" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Contact</a>
-            </div>
-        </nav>
-
-        <el-dialog>
-            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-                <div tabindex="0" class="fixed inset-0 focus:outline-none">
-                <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-                    <div class="flex items-center justify-between">
-                    <a href="#" class="-m-1.5 p-1.5">
-                        <span class="sr-only">Paulo.dev</span>
-                        <img src="src/images/logo.png" alt="" class="h-16 w-auto" />
-                    </a>
-                    <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
-                        <span class="sr-only">Close menu</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
-                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    </div>
-                    <div class="mt-6 flow-root">
-                    <div class="-my-6 divide-y divide-white/10">
-                        <div class="space-y-2 py-6">
-                        <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About</a>
-                        <a href="#projects" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Projects</a>
-                        <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Services</a>
-                        <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact</a>
-                        </div>
-                    </div>
-                    </div>
-                </el-dialog-panel>
-                </div>
-            </dialog>
-        </el-dialog>
-        <section class="h-screen flex flex-col items-center justify-center text-center -mt-20">
-            <h3 class="text-3xl mb-4 font-bold tracking-widest uppercase text-cyan-400">
-                PORTFÓLIO
-            </h3>
-
-            <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold drop-shadow-xl tracking-tight">
-                Paulo Welton
-            </h1>
-                
-            <p class="mt-4 text-xl md:text-2xl drop-shadow mb-10 text-white/80">
-                | Full Stack Developer | Systems Automation - RPA |
-            </p>
-
-            <a href="#projects" class="px-8 py-3 border-2 border-cyan-400 rounded-lg text-white font-semibold uppercase
-               hover:bg-cyan-400/20 transition duration-300 tracking-wider">
-                See More
+<header class="text-white">
+    <nav class="flex items-center justify-between p-6 lg:px-12">
+        <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Paulo Welton</span>
+            <img src="src/images/logo.png" alt="Logo" class="h-16 w-auto "/>
             </a>
-        </section>
-        </header>
-    </div>
+        </div>
+        
+        <div class="flex lg:hidden">
+            <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            </button>
+        </div>
 
-    <section id="about" class="bg-[#151a21] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
-        <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">
-            About Me
+        <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#about" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">About Me</a>
+            <a href="#projects" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Projects</a>
+            <a href="#services" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Services</a>
+            <a href="#contact" class="text-base font-semibold text-white hover:text-cyan-400 transition duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+            <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Paulo.dev</span>
+                    <img src="src/images/logo.png" alt="" class="h-16 w-auto" />
+                </a>
+                <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Close menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                </div>
+                <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-white/10">
+                    <div class="space-y-2 py-6">
+                    <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About</a>
+                    <a href="#projects" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Projects</a>
+                    <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Services</a>
+                    <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact</a>
+                    </div>
+                </div>
+                </div>
+            </el-dialog-panel>
+            </div>
+        </dialog>
+    </el-dialog>
+    <section class="h-screen flex flex-col items-center justify-center text-center -mt-20">
+        <h3 class="text-3xl mb-4 font-bold tracking-widest uppercase text-cyan-400">
+            PORTFÓLIO
         </h3>
 
-        <div class="w-11/12 md:w-2/3">
-            <p class="text-lg text-gray-300 leading-relaxed text-center mb-12">
-                Hello! I'm Paulo Welton, a Full-Stack and Automation Developer from Brazil.
-                I’ve been studying software development since 2021 and working professionally since 2023.
-                I'm currently pursuing a degree in Computer Science while building scalable back-end systems
-                and automating real business workflows with Python.
-            </p>
-        </div>
-
-        <h4 class="text-3xl font-bold mt-16 mb-8 text-cyan-300 uppercase tracking-wider text-center">
-            Hard Skills
-        </h4>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl text-left">
-
-            <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-lg hover:border-cyan-400 transition duration-300 h-full">
-                <h5 class="text-2xl font-bold mb-4 text-cyan-400 border-b border-gray-700 pb-2 flex items-center">
-                    <i class="fas fa-code mr-3"></i> Full-Stack Development
-                </h5>
-                <ul class="space-y-3 text-gray-300">
-                    <li class="flex items-center gap-2"><i class="devicon-python-plain text-lg text-yellow-500"></i> Python (API Development)</li>
-                    <li class="flex items-center gap-2"><i class="devicon-fastapi-plain text-lg text-cyan-300"></i> FastAPI, Flask, Django</li>
-                    <li class="flex items-center gap-2"><i class="devicon-mysql-plain text-lg text-blue-400"></i> SQL (MySQL, SQLite), SQLAlchemy</li>
-                    <li class="flex items-center gap-2"><i class="devicon-javascript-plain text-lg text-yellow-300"></i> JavaScript, DOM, HTML, CSS</li>
-                    <li class="flex items-center gap-2"><i class="devicon-react-plain text-lg text-cyan-500"></i> React (Basics), Tailwind CSS</li>
-                </ul>
-            </div>
-
-            <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-lg hover:border-cyan-400 transition duration-300 h-full">
-                <h5 class="text-2xl font-bold mb-4 text-cyan-400 border-b border-gray-700 pb-2 flex items-center">
-                    <i class="fas fa-robot mr-3"></i> RPA & Automation
-                </h5>
-                <ul class="space-y-3 text-gray-300">
-                    <li class="flex items-center gap-2"><i class="devicon-selenium-plain text-lg text-green-500"></i> Web Scraping, Selenium</li>
-                    <li class="flex items-center gap-2"><i class="devicon-pandas-plain text-lg text-blue-700"></i> Pandas, Excel, CSV, PDF Automation</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-stream text-lg text-cyan-400"></i> Workflow Automation (pyautogui, gspread)</li>
-                    <li class="flex items-center gap-2"><i class="devicon-pytest-plain text-lg text-yellow-400"></i> Automated Testing (Pytest)</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-repeat text-lg text-purple-400"></i> Scheduling, Logging, Retry Logic</li>
-                </ul>
-            </div>
-
-            <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-lg hover:border-cyan-400 transition duration-300 h-full">
-                <h5 class="text-2xl font-bold mb-4 text-cyan-400 border-b border-gray-700 pb-2 flex items-center">
-                    <i class="fas fa-tools mr-3"></i> Tools & DevOps
-                </h5>
-                <ul class="space-y-3 text-gray-300">
-                    <li class="flex items-center gap-2"><i class="devicon-git-plain text-lg text-red-600"></i> Git, GitHub (Version Control)</li>
-                    <li class="flex items-center gap-2"><i class="devicon-docker-plain text-lg text-blue-600"></i> Docker, Containerization</li>
-                    <li class="flex items-center gap-2"><i class="devicon-linux-plain text-lg text-gray-300"></i> Linux, CLI, Terminal</li>
-                    <li class="flex items-center gap-2"><i class="devicon-amazonwebservices-plain text-lg text-orange-500"></i> AWS (Basics, EC2)</li>
-                    <li class="flex items-center gap-2"><i class="devicon-jira-plain text-lg text-blue-700"></i> Agile, Scrum, Jira</li>
-                </ul>
-            </div>
-        </div>
-        </section>
-
-    <section id="projects" class="bg-[#10141a] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
-        <h3 class="text-4xl font-bold mb-12 border-b-4 border-cyan-400 inline-block pb-1">Projects</h3>
-        
-        <p class="text-xl text-gray-300 leading-relaxed text-center max-w-3xl mb-16">
-            Check out my featured projects, including automated systems, high-performance APIs, and user-friendly screens.
+        <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold drop-shadow-xl tracking-tight">
+            Paulo Welton
+        </h1>
+            
+        <p class="mt-4 text-xl md:text-2xl drop-shadow mb-10 text-white/80">
+            | Full Stack Developer | Systems Automation - RPA |
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-7xl" id="projects-container"></div>
-        
+        <a href="#projects" class="px-8 py-3 border-2 border-cyan-400 rounded-lg text-white font-semibold uppercase
+            hover:bg-cyan-400/20 transition duration-300 tracking-wider">
+            See More
+        </a>
+    </section>
+    </header>
+</div>
+
+<section id="about" class="bg-[#151a21] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
+    <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">
+        About Me
+    </h3>
+
+    <div class="w-11/12 md:w-2/3">
+        <p class="text-lg text-gray-300 leading-relaxed text-center mb-16">
+            Hello! I'm Paulo Welton, a Full-Stack and Automation Developer from Brazil.
+            I’ve been studying software development since 2021 and working professionally since 2023.
+            I'm currently pursuing a degree in Computer Science while building scalable back-end systems
+            and automating real business workflows with Python.
+        </p>
+    </div>
+
+    <h4 class="text-3xl font-bold mb-8 text-cyan-300 uppercase tracking-wider text-center">
+        Hard Skills
+    </h4>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl text-left">
+
+        <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-lg hover:border-cyan-400 transition duration-300 h-full">
+            <h5 class="text-2xl font-bold mb-4 text-cyan-400 border-b border-gray-700 pb-2 flex items-center">
+                <i class="fas fa-code mr-3"></i> Full-Stack Development
+            </h5>
+            <ul class="space-y-3 text-gray-300">
+                <li class="flex items-center gap-2"><i class="devicon-python-plain text-lg text-yellow-500"></i> Python (API Development)</li>
+                <li class="flex items-center gap-2"><i class="devicon-fastapi-plain text-lg text-cyan-300"></i> FastAPI, Flask, Django</li>
+                <li class="flex items-center gap-2"><i class="devicon-mysql-plain text-lg text-blue-400"></i> SQL (MySQL, SQLite), SQLAlchemy</li>
+                <li class="flex items-center gap-2"><i class="devicon-javascript-plain text-lg text-yellow-300"></i> JavaScript, DOM, HTML, CSS</li>
+                <li class="flex items-center gap-2"><i class="devicon-react-plain text-lg text-cyan-500"></i> React (Basics), Tailwind CSS</li>
+            </ul>
+        </div>
+
+        <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-lg hover:border-cyan-400 transition duration-300 h-full">
+            <h5 class="text-2xl font-bold mb-4 text-cyan-400 border-b border-gray-700 pb-2 flex items-center">
+                <i class="fas fa-robot mr-3"></i> RPA & Automation
+            </h5>
+            <ul class="space-y-3 text-gray-300">
+                <li class="flex items-center gap-2"><i class="devicon-selenium-plain text-lg text-green-500"></i> Web Scraping, Selenium</li>
+                <li class="flex items-center gap-2"><i class="devicon-pandas-plain text-lg text-blue-700"></i> Pandas, Excel, CSV, PDF Automation</li>
+                <li class="flex items-center gap-2"><i class="fas fa-stream text-lg text-cyan-400"></i> Workflow Automation (pyautogui, gspread)</li>
+                <li class="flex items-center gap-2"><i class="devicon-pytest-plain text-lg text-yellow-400"></i> Automated Testing (Pytest)</li>
+                <li class="flex items-center gap-2"><i class="fas fa-repeat text-lg text-purple-400"></i> Scheduling, Logging, Retry Logic</li>
+            </ul>
+        </div>
+
+        <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-lg hover:border-cyan-400 transition duration-300 h-full">
+            <h5 class="text-2xl font-bold mb-4 text-cyan-400 border-b border-gray-700 pb-2 flex items-center">
+                <i class="fas fa-tools mr-3"></i> Tools & DevOps
+            </h5>
+            <ul class="space-y-3 text-gray-300">
+                <li class="flex items-center gap-2"><i class="devicon-git-plain text-lg text-red-600"></i> Git, GitHub (Version Control)</li>
+                <li class="flex items-center gap-2"><i class="devicon-docker-plain text-lg text-blue-600"></i> Docker, Containerization</li>
+                <li class="flex items-center gap-2"><i class="devicon-linux-plain text-lg text-gray-300"></i> Linux, CLI, Terminal</li>
+                <li class="flex items-center gap-2"><i class="devicon-amazonwebservices-plain text-lg text-orange-500"></i> AWS (Basics, EC2)</li>
+                <li class="flex items-center gap-2"><i class="devicon-jira-plain text-lg text-blue-700"></i> Agile, Scrum, Jira</li>
+            </ul>
+        </div>
+    </div>
     </section>
 
-    <section id="services" class="bg-[#151a21] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
-        <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">Services</h3>
+<section id="projects" class="bg-[#10141a] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
+    <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">Projects</h3>
+    
+    <p class="text-xl text-gray-300 leading-relaxed text-center max-w-3xl mb-16">
+        Check out my featured projects, including automated systems, high-performance APIs, and user-friendly screens.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-7xl" id="projects-container"></div>
+    
+</section>
+
+<section id="services" class="bg-[#151a21] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
+    <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">Services</h3>
+    
+    <p class="text-xl text-gray-300 leading-relaxed text-center max-w-3xl mb-12">
+        How can I help you? If you need an app, API, Automation, or Website, you're in the right place!
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
         
-        <p class="text-xl text-gray-300 leading-relaxed text-center max-w-3xl mb-12">
-            How can I help you? If you need an app, API, Automation, or Website, you're in the right place!
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
-            
-            <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-xl text-center hover:bg-[#202836] transition duration-300">
-                <i class="fas fa-cogs text-6xl text-cyan-400 mb-4"></i>
-                <h4 class="text-2xl font-bold mb-3">Systems Automation (RPA)</h4>
-                <p class="text-gray-400">Development of custom bots to automate repetitive tasks, such as data extraction, reporting, and interaction with legacy systems, boosting efficiency.</p>
-            </div>
-
-            <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-xl text-center hover:bg-[#202836] transition duration-300">
-                <i class="fas fa-code text-6xl text-cyan-400 mb-4"></i>
-                <h4 class="text-2xl font-bold mb-3">Back-End & API Development</h4>
-                <p class="text-gray-400">Building scalable, secure, and high-performance RESTful APIs using Python (FastAPI/Flask) to power your applications and integrate services.</p>
-            </div>
-
-            <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-xl text-center hover:bg-[#202836] transition duration-300">
-                <i class="fas fa-desktop text-6xl text-cyan-400 mb-4"></i>
-                <h4 class="text-2xl font-bold mb-3">Front-End Development & UX</h4>
-                <p class="text-gray-400">Creating modern, responsive, and intuitive user interfaces (UIs) using JavaScript, React (Basics), and Tailwind CSS for a seamless user experience.</p>
-            </div>
+        <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-xl text-center hover:bg-[#202836] transition duration-300">
+            <i class="fas fa-cogs text-6xl text-cyan-400 mb-4"></i>
+            <h4 class="text-2xl font-bold mb-3">Systems Automation (RPA)</h4>
+            <p class="text-gray-400">Development of custom bots to automate repetitive tasks, such as data extraction, reporting, and interaction with legacy systems, boosting efficiency.</p>
         </div>
-    </section>
-    <section id="contact" class="bg-[#10141a] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
-        <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">Get in Touch</h3>
-        
-        <p class="text-xl text-gray-300 leading-relaxed text-center max-w-3xl mb-12">
-            Let's build something great! Connect with me via email or social media for project inquiries or collaboration.
-        </p>
 
-        <div class="w-full max-w-lg bg-[#151a21] p-8 rounded-xl shadow-2xl border border-gray-700 text-center">
-            
-            <h4 class="text-2xl font-semibold mb-6 text-cyan-300">Contact Information:</h4>
-            
-            <div class="flex items-center justify-center space-x-4 mb-6">
-                <i class="fas fa-envelope text-3xl text-cyan-400"></i>
-                <a href="mailto:paulo.welton08@gmail.com" class="text-xl text-white hover:text-cyan-400 transition duration-300 font-medium">
-                    paulo.welton08@gmail.com
+        <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-xl text-center hover:bg-[#202836] transition duration-300">
+            <i class="fas fa-code text-6xl text-cyan-400 mb-4"></i>
+            <h4 class="text-2xl font-bold mb-3">Back-End & API Development</h4>
+            <p class="text-gray-400">Building scalable, secure, and high-performance RESTful APIs using Python (FastAPI/Flask) to power your applications and integrate services.</p>
+        </div>
+
+        <div class="p-6 bg-[#1a202c] rounded-xl border border-cyan-700/50 shadow-xl text-center hover:bg-[#202836] transition duration-300">
+            <i class="fas fa-desktop text-6xl text-cyan-400 mb-4"></i>
+            <h4 class="text-2xl font-bold mb-3">Front-End Development & UX</h4>
+            <p class="text-gray-400">Creating modern, responsive, and intuitive user interfaces (UIs) using JavaScript, React (Basics), and Tailwind CSS for a seamless user experience.</p>
+        </div>
+    </div>
+</section>
+<section id="contact" class="bg-[#10141a] text-white p-16 md:p-24 border-t border-gray-700 flex flex-col items-center">
+    <h3 class="text-4xl font-bold mb-6 border-b-4 border-cyan-400 inline-block pb-1">Get in Touch</h3>
+    
+    <p class="text-xl text-gray-300 leading-relaxed text-center max-w-3xl mb-12">
+        Let's build something great! Connect with me via email or social media for project inquiries or collaboration.
+    </p>
+
+    <div class="w-full max-w-lg bg-[#151a21] p-8 rounded-xl shadow-2xl border border-gray-700 text-center">
+        
+        <h4 class="text-2xl font-semibold mb-6 text-cyan-300">Contact Information:</h4>
+        
+        <div class="flex items-center justify-center space-x-4 mb-6">
+            <i class="fas fa-envelope text-3xl text-cyan-400"></i>
+            <a href="mailto:paulo.welton08@gmail.com" class="text-xl text-white hover:text-cyan-400 transition duration-300 font-medium">
+                paulo.welton08@gmail.com
+            </a>
+        </div>
+
+        <div class="mt-8 border-t border-gray-700 pt-6">
+            <h4 class="text-lg font-semibold mb-4 text-cyan-300">Connect on Socials:</h4>
+            <div class="flex justify-center space-x-8 text-4xl">
+                <a href="https://github.com/paulowelton" target="_blank" class="text-white hover:text-cyan-400 transition duration-300" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/paulowelton" target="_blank" class="text-white hover:text-cyan-400 transition duration-300" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/pauloweltonn/" target="_blank" class="text-white hover:text-cyan-400 transition duration-300" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
                 </a>
             </div>
-
-            <div class="mt-8 border-t border-gray-700 pt-6">
-                <h4 class="text-lg font-semibold mb-4 text-cyan-300">Connect on Socials:</h4>
-                <div class="flex justify-center space-x-8 text-4xl">
-                    <a href="https://github.com/paulowelton" target="_blank" class="text-white hover:text-cyan-400 transition duration-300" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/paulowelton" target="_blank" class="text-white hover:text-cyan-400 transition duration-300" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/pauloweltonn/" target="_blank" class="text-white hover:text-cyan-400 transition duration-300" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
         </div>
-    </section>
-    <footer class="bg-black text-center py-6 text-gray-500 border-t border-gray-800">
-        <p>&copy; 2025 Paulo Welton. All rights reserved.</p>
-    </footer>
+    </div>
+</section>
+<footer class="bg-black text-center py-6 text-gray-500 border-t border-gray-800">
+    <p>&copy; 2025 Paulo Welton. All rights reserved.</p>
+</footer>
 
     <script src="src/js/script.js"></script>
 </body>
