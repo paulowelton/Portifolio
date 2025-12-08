@@ -97,7 +97,7 @@ function openProjectDetails(title) {
         `;
 
     project.images.forEach(src => {
-        carouselHtml += `<div class="swiper-slide"><img src="${src}" alt="Screenshot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"></div>`;
+        carouselHtml += `<div class="swiper-slide"><img src="${src}" alt="Screenshot" style="width: 100%; height: 100%; border-radius: 8px;"></div>`;
     });
 
     carouselHtml += `
