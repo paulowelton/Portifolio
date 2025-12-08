@@ -12,10 +12,23 @@ html{
 }
 .swiper {
   width: 600px;
-  height: 300px;
+  height: auto;
 }
 
 @media (max-width: 640px) {
+    #projects-container{
+        display: none;
+    }
+    
+    #projects-container-mobile{
+        display: block;
+    }
+
+    .swal2-html-container {
+        padding: 0 !important; 
+        margin: 0 !important;
+    }
+
     /* body {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
@@ -49,18 +62,15 @@ html{
         gap: 1.5rem !important;
     }
 
-    /* Ajusta cabeçalho mobile */
     nav a {
         font-size: 1.1rem !important;
     }
 
-    /* Hero section */
     #header-background section {
         margin-top: 1rem !important;
         padding-top: 2rem !important;
     }
 
-    /* Deixar o menu mobile com mais espaçamento */
     #mobile-menu a {
         padding: 0.75rem 0.5rem !important;
         font-size: 1.25rem !important;
