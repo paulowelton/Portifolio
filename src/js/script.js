@@ -14,7 +14,7 @@ function renderProjects(projectsToRender) {
 
         container.innerHTML += `
             <div class="bg-[#1a202c] rounded-xl shadow-2xl overflow-hidden border border-gray-700 hover:border-cyan-400 transition duration-300 transform hover:scale-[1.02]">
-                <img src="${p.images[0]}" alt="Imagem do Projeto" class="w-full h-48 object-cover border-b border-gray-700">
+                <img src="src/images/${p.title.toLowerCase()}/${p.images[0]}" alt="Imagem do Projeto" class="w-full h-48 border-b border-gray-700">
                 <div class="p-6">
                     <h4 class="text-2xl font-bold text-cyan-400 mb-3">${p.title}</h4>
                     <p class="text-gray-400 mb-4 text-base">${p.description}</p>
@@ -56,29 +56,6 @@ function renderProjects(projectsToRender) {
     });
 }
 
-function filterProjects(category) {
-    let filtered;
-    
-    if (category === 'all') {
-        filtered = allProjects;
-    } else {
-  
-        filtered = allProjects.filter(p => p.tags.includes(category));
-    }
-    
-    renderProjects(filtered);
-    
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.remove('bg-cyan-600', 'hover:bg-cyan-500');
-        btn.classList.add('bg-gray-700', 'hover:bg-cyan-500'); 
-        
-        if (btn.getAttribute('onclick').includes(`'${category}'`)) {
-            btn.classList.remove('bg-gray-700');
-            btn.classList.add('bg-cyan-600');
-        }
-    });
-}
-
 function openProjectDetails(title) {
     const project = allProjects.find(p => p.title === title);
 
@@ -97,7 +74,7 @@ function openProjectDetails(title) {
         `;
 
     project.images.forEach(src => {
-        carouselHtml += `<div class="swiper-slide"><img src="${src}" alt="Screenshot" style="width: 100%; height: 100%; border-radius: 8px;"></div>`;
+        carouselHtml += `<div class="swiper-slide"><img src="src/images/${project.title.toLowerCase()}/${src}" alt="Screenshot" style="width: 100%; height: 100%; border-radius: 8px;"></div>`;
     });
 
     carouselHtml += `
@@ -165,7 +142,7 @@ new Swiper('.swiper', {
   },
 
 //   navigation: {
-//     nextEl: '.swiper-button-next',
+//     nextEl: '.swiper-button-next',z
 //     prevEl: '.swiper-button-prev',
 //   },
 

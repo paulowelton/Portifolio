@@ -3,14 +3,14 @@
     "title": "Financial Control System",
     "description": "personal system that organizes your income and expenses throughout the month and creates personalized reports to show data about your financial life.",
     "tags": ["Full Stack", "Node.js", "Bootstrap"],
-    "images": ["src/images/financial control system/img1.png"],
+    "images": ["img1.png"],
     "link": "https://github.com/paulowelton/Sistema-de-Controle-de-Financas"
   },
   {
     "title": "Telegram Downloader Bot",
     "description": "Personal Telegram bot that receives a YouTube link, downloads the audio and video, and sends it via message, email, or saves it on a server for later download.",
     "tags": ["RPA", "Python", "Telegram"],
-    "images": ["src/images/telegram downloader bot/img1.png", "src/images/telegram downloader bot/img2.png"],
+    "images": ["img1.png", "img2.png"],
     "link": "https://github.com/paulowelton/bot_telegram_youtube"
   },
   {
@@ -24,28 +24,21 @@
     "title": "Cosco Scraper Bot",
     "description": "Automation bot created for a client that extracts shipment and container data from the Cosco website using Selenium.",
     "tags": ["RPA", "Python", "Selenium"],
-    "images": ["src/images/cosco.png"],
+    "images": ["img1.png"],
     "link": "https://github.com/paulowelton/bot_cosco_scraper"
-  },
-  {
-    "title": "SSPDS Data Extraction Bot",
-    "description": "Automation bot that logs into the SSPDS portal and downloads security reports for data analysis.",
-    "tags": ["RPA", "Python", "Selenium"],
-    "images": ["src/images/sspds.png"],
-    "link": "https://github.com/paulowelton/bot_extracao_de_dados_sspds"
   },
   {
     "title": "Product Price Tracker",
     "description": "Desktop automation tool with Tkinter that searches for product promotions across e-commerce websites.",
-    "tags": ["RPA", "Python", "Selenium", "Tkinter"],
-    "images": ["src/images/promocoes.png"],
+    "tags": ["RPA", "Python", "Selenium", "Tkinter", "Pandas", "Desktop"],
+    "images": ["img1.png"],
     "link": "https://github.com/paulowelton/bot_procurar_promocoes"
   },
   {
     "title": "Space Shooter Game",
     "description": "A retro-style space shooting game built using Python and Pygame for learning and experimentation.",
     "tags": ["Python", "Game Dev", "Pygame"],
-    "images": ["src/images/space shooter/img1.png"],
+    "images": ["img1.png"],
     "link": "https://github.com/paulowelton/space_shooter"
   },
   {
