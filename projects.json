@@ -1,51 +1,42 @@
 [
   {
     "title": "Financial Control System",
-    "description": "personal system that organizes your income and expenses throughout the month and creates personalized reports to show data about your financial life.",
+    "description": "Personal system that organizes your income and expenses throughout the month and generates detailed reports to visualize your financial life.",
+    "entireDescription": "This project is a complete personal financial management system built from scratch, designed to help users better understand and control their income and expenses. It centralizes all financial data in one place and generates dynamic visual reports that highlight monthly balance, spending categories, and financial trends.\n\nThe system includes user authentication, category-based transaction control, and a dashboard with interactive charts. It was developed using Node.js on the backend, Bootstrap on the frontend, and MySQL as the relational database.\n\nI implemented structured MVC architecture, data validation, clean API routes, reusable components, and an organized codebase that is easy to maintain. This project significantly improved my understanding of full-stack development, REST APIs, and database modeling.",
     "tags": ["Full Stack", "Node.js", "Bootstrap"],
     "images": ["img1.png"],
     "link": "https://github.com/paulowelton/Sistema-de-Controle-de-Financas"
   },
   {
     "title": "Telegram Downloader Bot",
-    "description": "Personal Telegram bot that receives a YouTube link, downloads the audio and video, and sends it via message, email, or saves it on a server for later download.",
+    "description": "Telegram bot that receives a YouTube link, downloads the audio or video, and returns it to the user.",
+    "entireDescription": "This automation bot for Telegram receives a YouTube URL and automatically downloads the requested media — either audio (MP3) or full video — and sends it back to the user via Telegram or email. It also supports saving files to a local server for future downloads.\n\nThe bot integrates the Telegram Bot API with Python and uses Pytube for extracting video/audio data. It includes error handling, invalid link detection, progress logs, and a workflow optimized for speed and stability.\n\nThis bot was originally created for personal use and later improved to become more scalable and modular. It is a strong example of my ability to combine API integration, automation, and backend scripting in a clean and maintainable way.",
     "tags": ["RPA", "Python", "Telegram"],
     "images": ["img1.png", "img2.png"],
     "link": "https://github.com/paulowelton/bot_telegram_youtube"
   },
   {
-    "title": "Vanturismo",
-    "description": "Complete website developed for a client, including landing page, product catalog, and responsive layout.",
-    "tags": ["Web Development", "HTML", "CSS", "JavaScript"],
-    "images": ["src/images/vanturismo.png"],
-    "link": "https://github.com/paulowelton/vanturismo"
-  },
-  {
     "title": "Cosco Scraper Bot",
-    "description": "Automation bot created for a client that extracts shipment and container data from the Cosco website using Selenium.",
+    "description": "Automation bot that extracts container and shipment data from the Cosco website using Selenium.",
+    "entireDescription": "This automation bot was built for a client to extract shipment and container tracking information from the COSCO website. Using Selenium and Python, it navigates through the platform, handles dynamic DOM structures, and extracts structured data such as container ID, status, last update, and route information.\n\nBecause the website changes the layout dynamically, I implemented custom XPath mapping, waits to avoid stale element errors, retry logic, and a clean scraping pipeline that ensures robust data collection. The bot automatically saves the extracted data into a clean format, ready for processing.\n\nThis project strengthened my experience with real-world automation challenges, especially handling unstable sites, dynamic components, and production-grade Selenium scripts.",
     "tags": ["RPA", "Python", "Selenium"],
     "images": ["img1.png"],
     "link": "https://github.com/paulowelton/bot_cosco_scraper"
   },
   {
     "title": "Product Price Tracker",
-    "description": "Desktop automation tool with Tkinter that searches for product promotions across e-commerce websites.",
+    "description": "Desktop tool that searches for product promotions across multiple e-commerce stores.",
+    "entireDescription": "This is a desktop automation tool created using Python, Selenium, Tkinter, and Pandas. The user enters a product name, and the bot automatically searches for the item across multiple e-commerce websites and retrieves available prices, promotions, and product links.\n\nThe interface was built with Tkinter, allowing the application to run as a simple desktop program. The automation pipeline handles dynamic loading, scrolling, cookies banners, and alternative page layouts to ensure stable scraping.\n\nThe data is cleaned and organized with Pandas before being shown to the user, making the results easy to understand. This project demonstrates my ability to combine web automation, data processing, and GUI development in a single integrated application.",
     "tags": ["RPA", "Python", "Selenium", "Tkinter", "Pandas", "Desktop"],
     "images": ["img1.png"],
     "link": "https://github.com/paulowelton/bot_procurar_promocoes"
   },
   {
     "title": "Space Shooter Game",
-    "description": "A retro-style space shooting game built using Python and Pygame for learning and experimentation.",
+    "description": "Retro-style space shooting game made with Python and Pygame.",
+    "entireDescription": "This project is a retro-style 2D space shooter game developed using Python and Pygame. It includes player movement, enemy waves, collision detection, score tracking, sprites, animations, and sound effects.\n\nThe goal of the project was to practice game logic, object-oriented programming, and event-loop structures. I implemented separate modules for the player, enemies, projectiles, and game controller to keep the architecture clean and easy to expand.\n\nThis game helped me deepen my understanding of real-time processing, keyboard events, game physics, and runtime optimization. It also strengthened my general Python skills in a fun and technical environment.",
     "tags": ["Python", "Game Dev", "Pygame"],
     "images": ["img1.png"],
     "link": "https://github.com/paulowelton/space_shooter"
-  },
-  {
-    "title": "Email Microservice",
-    "description": "Java Spring Boot microservice that sends emails through a REST API using MySQL for persistence.",
-    "tags": ["Backend", "Java", "Spring Boot", "MySQL"],
-    "images": ["src/images/microservice_email.png"],
-    "link": "https://github.com/paulowelton/Microsservice-Email"
   }
 ]
