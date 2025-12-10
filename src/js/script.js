@@ -96,7 +96,7 @@ function openProjectDetails(title) {
 
     const contentHtml = `
         ${carouselHtml}
-        <div class="text-left text-gray-300 text-base leading-relaxed">${project.description}</div>
+        <div class="text-left text-gray-300 text-base leading-relaxed">${project.entireDescription}</div>
     `;
 
     Swal.fire({
